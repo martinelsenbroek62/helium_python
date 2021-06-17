@@ -1,0 +1,160 @@
+{% extends "base.html" %}
+{% set show_navbar = "True" %}
+
+{% block content %}
+<div class="container my-2">
+  <div class="Profile_heading">
+    <h4>
+          Sustain 6
+      </h4>
+  </div>
+  <div class="text-center mt-3 mb-3 nbutton ">
+<button type="button" class="btn btn-secondary b1">Home</button>
+<button type="button" class="btn btn-secondary b2">Sections</button>
+<button type="button" class="btn btn-secondary b3">Report</button>
+<button type="button" class="btn btn-secondary b4">Data</button>
+<button type="button" class="btn btn-secondary b5">FQA</button>
+  </div>
+  <div class="c1 mb-3 mt-3 d-flex p-2">
+  <button class="btn btn-primary prev d-inline" style="font-size: 20px"><i class="fa fa-caret-left" aria-hidden="true" ></i> Prev </button>
+  <h3 class=" text-center  h31 ">Basics: Location</h3>
+  <button class="btn btn-primary next d-inline" style="font-size: 20px;">Next <i class="fa fa-caret-right" aria-hidden="true"></i></button>
+</div>
+<div class="container h4 mt-5 mb-4 text-center ">
+        <span class="text-danger">*</span>  What state do you live in?
+      </div>
+      <div class="container mb-3 mt-5 text-center state-list h4" style="font-size:20px;">
+        <select name="question[answer]" data-required="&quot;true&quot;">
+    <option value="">-- Please Choose</option>
+      
+      <option value="Alabama">Alabama</option>
+      
+      <option value="Alaska">Alaska</option>
+      
+      <option value="Arizona">Arizona</option>
+      
+      <option value="Arkansas">Arkansas</option>
+      
+      <option value="California">California</option>
+      
+      <option value="Canada">Canada</option>
+      
+      <option value="Colorado">Colorado</option>
+      
+      <option value="Connecticut">Connecticut</option>
+      
+      <option value="Delaware">Delaware</option>
+      
+      <option value="District of Columbia">District of Columbia</option>
+      
+      <option value="Florida">Florida</option>
+      
+      <option value="Georgia">Georgia</option>
+      
+      <option value="Hawaii">Hawaii</option>
+      
+      <option value="Idaho">Idaho</option>
+      
+      <option value="Illinois">Illinois</option>
+      
+      <option value="Indiana">Indiana</option>
+      
+      <option value="Iowa">Iowa</option>
+      
+      <option value="Kansas">Kansas</option>
+      
+      <option value="Kentucky">Kentucky</option>
+      
+      <option value="Louisiana">Louisiana</option>
+      
+      <option value="Maine">Maine</option>
+      
+      <option value="Maryland">Maryland</option>
+      
+      <option value="Massachussetts">Massachussetts</option>
+      
+      <option value="Michigan">Michigan</option>
+      
+      <option value="Minnesota">Minnesota</option>
+      
+      <option value="Mississippi">Mississippi</option>
+      
+      <option value="Missouri">Missouri</option>
+      
+      <option value="Montana">Montana</option>
+      
+      <option value="Nebraska">Nebraska</option>
+      
+      <option value="Nevada">Nevada</option>
+      
+      <option value="New Hampshire">New Hampshire</option>
+      
+      <option value="New Jersey">New Jersey</option>
+      
+      <option value="New Mexico">New Mexico</option>
+      
+      <option value="New York">New York</option>
+      
+      <option value="North Carolina">North Carolina</option>
+      
+      <option value="North Dakota">North Dakota</option>
+      
+      <option value="Ohio">Ohio</option>
+      
+      <option value="Oklahoma">Oklahoma</option>
+      
+      <option value="Ontario">Ontario</option>
+      
+      <option value="Oregon">Oregon</option>
+      
+      <option value="Pennsylvania">Pennsylvania</option>
+      
+      <option value="Rhode Island">Rhode Island</option>
+      
+      <option value="South Carolina">South Carolina</option>
+      
+      <option value="South Dakota">South Dakota</option>
+      
+      <option value="Tennessee">Tennessee</option>
+      
+      <option value="Texas">Texas</option>
+      selected=selected
+      <option value="Utah" selected="selected">Utah</option>
+      
+      <option value="Vermont">Vermont</option>
+      
+      <option value="Virginia">Virginia</option>
+      
+      <option value="Washington">Washington</option>
+      
+      <option value="West Virginia">West Virginia</option>
+      
+      <option value="Wisconsin">Wisconsin</option>
+      
+      <option value="Wyoming">Wyoming</option>
+  </select>
+
+      </div>
+      <div class="container text-center" style="font-size:20px;"><a href="#"><i class="fa fa-info-circle"></i> More Info</a></div>
+
+  <div class="container h4 mt-5 mb-4 text-center ">
+        <span class="text-danger">*</span> Do you own or rent your home?
+      </div>
+      <div class="container text-center mt-3 mb-3">
+      <select name="question[answer]" data-required="&quot;true&quot;">
+    <option value="">-- Please Choose</option>
+      
+      <option value="Own">Own</option>
+      selected=selected
+      <option value="Rent" selected="selected">Rent</option>
+  </select>
+      </div>
+      <div class="container text-center" style="font-size:20px;"><a href="#"><i class="fa fa-info-circle"></i> More Info</a></div>
+      <div class="container text-center mt-3 mb-3">
+        <button class="btn btn-primary"><span class="h5">Save &amp; Continue</span></button>
+      </div>
+      <p class="muted text-center">
+          Return to end of survey
+        </p>
+      </div>
+      {% endblock %}

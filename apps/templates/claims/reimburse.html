@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% set show_navbar = "True" %}
+
+{% block content %}
+<div class="container mb-5 pb-5" style="margin-bottom: 200px !important;">
+	<div class="Profile_heading">
+		<h4>
+        Sustain 6
+      </h4>
+	</div>
+   <div>
+      <span>Submit a Claim</span>
+    <ol class="Order_list">
+      <li>Select a Product Type below to start a claim</li>
+      <li>Complete and submit form with supporting documentation</li>
+      <li>Your claim will be reviewed within 3-5 business days</li>
+      <li>Once approved you will be reimbursed the following pay period</li>
+    </ol>  
+  </div>
+    <div class="">
+Search: <input type="text" id="filter_categories" value="">
+    <span class="">
+      <a href="?">
+        RESET
+      </a>
+    </span>
+  </div>
+	</div>
+{% endblock %}

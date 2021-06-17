@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% set show_navbar = "True" %}
+
+{% block content %}
+<div class="container">
+	
+
+<div class="Profile_heading">
+		<h4>
+        Sustain 6
+      </h4>
+	</div>
+<div class="text-center my-2 mb-5">
+	<div class="btn_div">
+        <a href="{{ url_for('survey_router.get_started') }}">
+        <button class="btn btn-success"><h4>Take your survey</h4></button>
+	</a></div>
+	<div class="row mt-5">
+		<div class="col-4"><img src="{{ url_for('static', filename='imgs/index_logo.jpg') }}" width="350"></div>
+		<div class="col">
+			<h1 class="mt-1 index_heading">Sustain 6 Reimbursable Benefits</h1>
+			<p class="lead">Transform your employees into sustainability champions at work, home and beyond.</p>
+		</div>
+	</div>
+	<div class="details">
+		<h2>Your Benefits</h2>
+		<br>
+		<h2>How to Spend</h2>
+		<p class="parh">Getting reimbursed is a simple, 3-step process:</p>
+		<ul class="list-group">
+    <li class="list-group-item parh">Make your qualifying purchase</li>
+    <li class="list-group-item parh">Submit <a href="{{ url_for('claim_router.reimburse') }}">the reimbursement form</a></li>
+    <li class="list-group-item parh">Receive your reimbursement, minus taxes, in your next paycheck</li>
+  </ul>
+  <h3 class="mt-4"> Questions? <a href="mailto:help@sustbenefits.com">Email us</a> or chat us.</h3>
+	</div>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% set show_navbar = "True" %}
+
+{% block content %}
+    <div class="container mb-5 pb-5" style="margin-bottom: 200px !important;">
+        <div class="Profile_heading">
+            <h4>
+                Sustain 6
+            </h4>
+        </div>
+            <form method="POST" action="{{ url_for('user_router.profile') }}">
+            <div class="form-group">
+                <label for="name">Name</label>
+                {{ form.name(class="form-control", value=user.name) }}
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                {{ form.email(class="form-control", value=user.email) }}
+            </div>
+            <div class="form-group">
+                <label for="Password">Password</label>
+                {{ form.password(class="form-control", value=user.password) }}
+            </div>
+            <button class="btn btn-primary">Update</button>
+            <a href="{{ url_for('user_router.profile') }}">Cancel</a>
+        </form>
+    </div>
+    {#<img src= {{ url_for('static', filename = 'logo.png') }} width="300px">#}
+    {#    <div class="center"><img#}
+    {#            src={{ url_for('static', filename = 'users/logo.png') }}#}
+    {#                    style="width:300px"/>#}
+    {#        <br><br></div>#}
+    {##}
+    {#    <div class="card">#}
+    {#        <div class="card-header">#}
+    {#            <h1>Welcome to Sustainability Benefits</h1>#}
+    {#        </div>#}
+    {#    </div>#}
+    {#    <div class="card-body">#}
+    {#        <form method="POST" action="{{ url_for('user_router.profile') }}">#}
+    {#            <div class="">#}
+    {#                {{ form.email.label() }}#}
+    {#                {{ form.email(class="u-full-width", value=user.email) }}#}
+    {#            </div>#}
+    {#            <div class="">#}
+    {#                {{ form.username.label() }}#}
+    {#                {{ form.username(class="u-full-width", value=user.username) }}#}
+    {#            </div>#}
+    {#            <div class="">#}
+    {#                {{ form.name.label() }}#}
+    {#                {{ form.name(class="u-full-width", value=user.name) }}#}
+    {#            </div>#}
+    {#            <div class="">#}
+    {#                <button class="">Update <i class="fa fa-send"></i></button>#}
+    {#            </div>#}
+    {#        </form>#}
+    {#        <div class="card-footer">#}
+    {#            <div class="">#}
+    {#                <a href="{{ url_for('user_router.login') }}"> <i class="fa fa-lock"></i>#}
+    {#                    Back to login#}
+    {#                </a>#}
+    {#            </div>#}
+    {#        </div>#}
+    {#    </div>#}
+{% endblock %}

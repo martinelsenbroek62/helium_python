@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% set show_navbar = "True" %}
+
+{% block content %}
+    <div class="container mb-5 pb-5" style="margin-bottom: 200px !important;">
+	<div class="Profile_heading">
+		<h4>
+        Sustain 6
+      </h4>
+	</div>
+   <div class="container text-center mb-4">
+      <h1>Your Household Report is Ready!</h1>
+  </div>
+  <div class="text-center mb-3">
+<h3 class="center"><i class="fa fa-star text-warning"></i>Find out what it means for you...<i class="fa fa-star text-warning"></i></h3>
+</div>
+<div class="text-center mb-5">
+  Thank you for taking the 2021 Sustain 6 Demo Survey!
+  <br> Now you can explore the results!
+</div>
+<div class="text-center mb-5">
+  <a href="http://www.sustainabli.co/surveys/11014/report" class="btn btn-primary">
+    <i class="fa fa-caret-left"></i> Go To Your Report <i class="fa fa-caret-right"></i>
+  </a>
+</div>
+<div class="text-center">
+  <a target="_self" href="{{ url_for('survey_router.take_survey') }}">
+        Continue where you left off <i class="fa fa-arrow-right"></i>
+</a>
+</div>
+  </div>
+	</div>
+      {% endblock %}

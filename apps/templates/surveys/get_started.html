@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% set show_navbar = "True" %}
+
+{% block content %}
+
+    <div class="container my-2">
+        <div class="Profile_heading">
+            <h4>
+                Sustain 6
+            </h4>
+        </div>
+        <div class="text-center">
+            <h1 class="survey_heading">Let's Get Started</h1>
+            <p class="survey_parh">Welcome to the 2021 Sustain 6 Demo Survey! We use this to measure your household's
+                impact
+                and help us measure our progress toward reaching our carbon reduction goals. By taking the survey,
+                you'll
+                get a report to help you with your own personal goals. All your survey information will be kept
+                confidential</p>
+        </div>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title text-center">What You'll Get</h4>
+                    <p class="card_awesome"><span class="fa-stack fa-lg fontawesome">
+            <i class="fa fa-circle fa-stack-2x gold"></i>
+            <i class="fa fa-camera fa-stack-1x fa-inverse"></i>
+          </span> A clear picture of your carbon footprint</p>
+                    <p class="card_awesome"><span class="fa-stack fa-lg fontawesome">
+            <i class="fa fa-circle fa-stack-2x gold"></i>
+            <i class="fa fa-bullhorn fa-stack-1x fa-inverse"></i>
+          </span> How your carbon footprint compares with others</p>
+                    <p class="card_awesome"><span class="fa-stack fa-lg fontawesome">
+            <i class="fa fa-circle fa-stack-2x gold"></i>
+            <i class="fa fa-lightbulb-o fa-stack-1x fa-inverse"></i>
+          </span> Ideas of how to decrease your carbon impact</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title text-center">How much time does it take?</h4>
+                    <p class="card_awesome"><span class="fa-stack fa-lg fontawesome">
+            <i class="fa fa-circle fa-stack-2x gold"></i>
+            <i class="fa fa-clock-o fa-stack-1x fa-inverse"></i>
+          </span> 10-15 minutes</p>
+                    <h4 class="card-title text-center">What you'll need</h4>
+                    <p class="card_awesome"><span class="fa-stack fa-lg fontawesome">
+            <i class="fa fa-circle fa-stack-2x gold"></i>
+            <i class="fa fa-clipboard fa-stack-1x fa-inverse"></i>
+          </span> Last year's info on vehicles, utility & fuel usage</p>
+                </div>
+            </div>
+
+        </div>
+
+        <h5 class="text-center mb-5 mt-2">Please complete the survey by the deadline of </h5>
+        <div class="text-center mt-5 mb-3">
+            <a href="{{ url_for('survey_router.report') }}">
+            <button class="btn btn-primary"><h5>Start Survey</h5></button>
+        </a></div>
+        <p class="text-center survey_link"><a href="#">Continue where you left off <i class="fa fa-arrow-right"></i></a>
+        </p>
+    </div>
+{% endblock %}

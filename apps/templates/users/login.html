@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% set show_navbar = "False" %}
+
+{% block content %}
+    <div class="container my-5 py-5">
+        <div class="text-center mb-5">
+            <img src={{ url_for('static', filename = 'users/logo.png') }} width="300">
+        </div>
+        <div class="login_box">
+            <div class="card">
+                <h1 class="card-header">Welcome to Sustainability Benefits</h1>
+                <div class="card-body">
+                    <form method="POST" action="{{ url_for('user_router.login') }}">
+                        <div class="form-group">
+                            <label>Email</label>
+                            {{ form.email(class="form-control", placeholder="Enter the email", id='email') }}
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            {{ form.password(class="form-control", placeholder="Enter the password", id='email') }}
+                        </div>
+                        <div class="">
+
+                            <button class="btn btn-primary">Login <i class="fa fa-paper-plane"
+                                                                                   style="font-size:24px;color:white;"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <div class="">
+                        <a href="{{ url_for('user_router.forgot_password') }}"> <i class="fa fa-lock"></i>
+                            Forgot password?
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    {#<img src= {{ url_for('static', filename = 'logo.png') }} width="300px">#}
+    {#    <div class="center"><img#}
+    {#            src={{ url_for('static', filename = 'users/logo.png') }}#}
+    {#                    style="width:300px"/>#}
+    {#        <br><br></div>#}
+    {##}
+    {#    <div class="card">#}
+    {#        <div class="card-header">#}
+    {#            <h1>Welcome to Sustainability Benefits</h1>#}
+    {#        </div>#}
+    {#    </div>#}
+    {#    <div class="card-body">#}
+    {#        <form method="POST" action="{{ url_for('user_router.login') }}">#}
+    {#            <div class="">#}
+    {#                {{ form.email.label() }}#}
+    {#                {{ form.email(class="u-full-width") }}#}
+    {#            </div>#}
+    {#            <div class="">#}
+    {#                {{ form.password.label() }}#}
+    {#                {{ form.password(class="u-full-width") }}#}
+    {#            </div>#}
+    {#            <div class="">#}
+    {#                <button class="">Login <i class="fa fa-send"></i></button>#}
+    {#            </div>#}
+    {#        </form>#}
+    {#        <div class="card-footer">#}
+    {#            <div class="">#}
+    {#                <a href="{{ url_for('user_router.forgot_password') }}"> <i class="fa fa-lock"></i>#}
+    {#                    Forgot password?#}
+    {#                </a>#}
+    {#            </div>#}
+    {#        </div>#}
+    {#    </div>#}
+{% endblock %}
+{#<img src="{{image}}" width="300px">#}
+
+{#    <div class="column is-4 is-offset-4">#}
+{#        <h3 class="title">Login</h3>#}
+{#        <div class="box">#}
+{#            {% with messages = get_flashed_messages() %}#}
+{#                {% if messages %}#}
+{#                    <div class="notification is-danger">#}
+{#                        {{ messages[0] }}#}
+{#                    </div>#}
+{#                {% endif %}#}
+{#            {% endwith %}#}
+{#            <form method="POST" action="/users/login/">#}
+{#                <div class="field">#}
+{#                    <div class="control">#}
+{#                        <input class="input is-large" type="email" name="email" placeholder="Your Email" autofocus="">#}
+{#                    </div>#}
+{#                </div>#}
+{##}
+{#                <div class="field">#}
+{#                    <div class="control">#}
+{#                        <input class="input is-large" type="password" name="password" placeholder="Your Password">#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="field">#}
+{#                    <label class="checkbox">#}
+{#                        <input type="checkbox">#}
+{#                        Remember me#}
+{#                    </label>#}
+{#                </div>#}
+{#                <button class="button is-block is-info is-large is-fullwidth">Login</button>#}
+{#            </form>#}
+{#        </div>#}
+{#    </div>#}

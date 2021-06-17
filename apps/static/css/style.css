@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.login_box{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+}
+label{
+    font-weight: bold;
+    color: #999;
+}
+#benefits_menu{
+    padding: 0px;
+    background: #44C8F5 !important;
+}
+.no_padding{
+    padding:0px;
+}
+.nav-link{
+    color:white !important;
+}
+.Profile_heading{
+    color: #44C8F5 !important;
+    border-bottom: 1px solid #e6e6e6;
+}
+.footer{
+    background: #DEF3FD;
+    width: 100%;
+}
+.content{
+
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 20px;
+    color: #888A8C;
+}
+.BoldUnderline{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.copyright{
+
+    line-height: 30px;
+    font-size: 20px;
+    color: #888A8C;
+    font-weight: 300;
+}
+.index_heading{
+
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.1;
+    text-align: left;
+}
+.lead{
+
+    color: #212529;
+    
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.parh{
+    font-size: 20px;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    box-sizing: inherit;
+    margin-top: 0;
+}
+.survey_heading{
+
+    font-size: 4rem;
+    font-weight: 300;
+    margin-top: .25rem!important;
+    display: block !important;
+    line-height: 60px;
+}
+.survey_parh{
+    line-height: 1.5;
+    color: #212529;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.fontawesome{
+    color: #FFDD00 !important;
+}
+.card_awesome{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.survey_link{
+    font-weight: 400;
+    line-height: 1.5;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nbutton {
+  border: none;
+  color: white;
+  text-align: center;
+
+}
+.b2{
+    margin-left: 10px;
+}
+.b3{
+    margin-left: 10px;
+}
+.b4{
+    margin-left: 10px;
+}
+.b5{
+    margin-left: 10px;
+}
+.c1{
+      border-top: solid 5px gold;
+    background: whitesmoke;
+   
+}
+.next{
+    margin-left: 360px;
+}
+.prev{
+    text-align: left !important;
+   }
+
+.h31{
+    
+    text-align: center !important;
+    padding-left: 360px;
+   }
+.muted{
+    text-decoration: underline;
+
+}
+.Order_list>li{
+list-style: none;
+    padding-left: 30px;
+}
