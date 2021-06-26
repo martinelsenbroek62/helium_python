@@ -1,7 +1,7 @@
 
 ### Navigate to root directory, config and run following commands:
 
- > git clone git clone https://<bitbucket_user_id>@bitbucket.org/VENUS24/helium_python.git
+ > git clone https://github.com/pyeliteman/helium_python.git
 
  > cd helium_python
  
