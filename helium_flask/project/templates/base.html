@@ -19,7 +19,7 @@
 <body>
 {% if show_navbar == 'True' %}
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary navbar-inverse" id="benefits_menu">
-        <a class="navbar-brand no_padding" href="#">
+        <a class="navbar-brand no_padding" href="{{ url_for('general_router.home') }}">
             <img src="{{ url_for('static', filename='imgs/navbar_logo.png') }}" width="225">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"

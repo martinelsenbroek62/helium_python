@@ -1,7 +1,7 @@
 from sqlalchemy import String, Column, Text, Integer, Boolean, Date
 from helium_flask.project.apps import db
 
-from helium_flask.project.helpers.models import BaseModel
+from helium_flask.project.helpers.generic_models import BaseModel
 
 
 class BenefitCategories(BaseModel):

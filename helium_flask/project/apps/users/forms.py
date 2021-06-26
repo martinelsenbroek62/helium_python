@@ -15,4 +15,9 @@ class ForgotPasswordForm(FlaskForm):
 
 class ResetPasswordForm(FlaskForm):
     password = PasswordField()
-    password1 = PasswordField()
+    password1 = PasswordField(label="Confirm password")
+
+class UserSignupForm(FlaskForm):
+    email = StringField()
+    password = PasswordField()
+    password2 = PasswordField()

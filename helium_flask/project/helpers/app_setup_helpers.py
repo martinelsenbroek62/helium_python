@@ -1,20 +1,20 @@
-from flask import Flask
-
 from os import getenv
-
 from flask_login import LoginManager
-from flask_migrate import Migrate
 from flask_sqlalchemy import SQLAlchemy
 
 
+# noinspection PyPackageRequirements
 def configure_app(app):
-    app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql:///helium"
-    # app.config['SQLALCHEMY_DATABASE_URI'] = getenv("DATABASE_URL")
+    # app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql:///helium"
+    app.config['SQLALCHEMY_DATABASE_URI'] = getenv("DATABASE_URL")
+    # app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:1234@localhost:5432/helium_flask"
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app.config['SECRET_KEY'] = "secret"
 
     app.config['MAIL_SERVER'] = 'smtp.gmail.com'
     app.config['MAIL_PORT'] = 465
+    # app.config['MAIL_USERNAME'] = "oldnightsproject@gmail.com"
+    # app.config['MAIL_PASSWORD'] = "oldnights123"
     app.config['MAIL_USERNAME'] = getenv("MAIL_USERNAME")
     app.config['MAIL_PASSWORD'] = getenv("MAIL_PASSWORD")
     app.config['MAIL_USE_TLS'] = False
@@ -29,7 +29,3 @@ def initialize_login_manager(app):
     login_manager.init_app(app)
     return login_manager
 
-app = Flask(__name__, static_folder="../static", template_folder="../templates")
-app = configure_app(app)
-db = initialize_db(app)
-login_manager = initialize_login_manager(app)

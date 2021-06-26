@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% set show_navbar = "False" %}
+
+{% block content %}
+    <div class="container my-5 py-5">
+        <div class="text-center mb-5">
+            <img src={{ url_for('static', filename = 'users/logo.png') }} width="300">
+        </div>
+        <div class="login_box">
+            <div class="card">
+                <h1 class="card-header">Welcome to Sustainability Benefits</h1>
+                <div class="card-body">
+                    <form method="POST" action="{{ url_for('user_router.signup') }}">
+                        <div class="form-group">
+                            <label>Email</label>
+                            {{ form.email(class="form-control", placeholder="Enter the email", id='email') }}
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            {{ form.password(class="form-control", placeholder="Enter the password", id='email') }}
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            {{ form.password2(class="form-control", placeholder="Confirm password", id='email') }}
+                        </div>
+                        <div class="">
+                            <button class="btn btn-primary">Signup 
+							<i class="fa fa-paper-plane" style="font-size:24px;color:white;"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <div class="">
+                        <a href="{{ url_for('user_router.login') }}"> <i class="fa fa-lock"></i>
+                            Already a user?
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}
