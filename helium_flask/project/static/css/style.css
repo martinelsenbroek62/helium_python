@@ -128,18 +128,18 @@ label{
     background: whitesmoke;
    
 }
-.next{
-    margin-left: 360px;
-}
-.prev{
-    text-align: left !important;
-   }
+/*.next{*/
+/*    text-align: right !important;*/
+/*}*/
+/*.prev{*/
+/*    text-align: left !important;*/
+/*   }*/
 
-.h31{
-    
-    text-align: center !important;
-    padding-left: 260px;
-   }
+/*.h31{*/
+/*    */
+/*    text-align: center !important;*/
+/*    padding-left: 260px;*/
+/*   }*/
 .muted{
     text-decoration: underline;
     color: #808080;

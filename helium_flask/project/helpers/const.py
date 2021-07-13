@@ -1,0 +1,1 @@
+SURVEY_INPUT_FIELD_TYPES = {"text": "Text", "selection": "Selection"}

@@ -13,8 +13,15 @@ flask-wtf = "*"
 flask-mail = "*"
 psycopg2 = "*"
 psycopg2-binary = "*"
+flask-admin = "*"
+black = "*"
+flask-cors = "*"
+flask-praetorian = "*"
 
 [dev-packages]
 
 [requires]
 python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true

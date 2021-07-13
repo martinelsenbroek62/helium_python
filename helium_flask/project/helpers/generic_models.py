@@ -9,8 +9,12 @@ class BaseModel(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
 
-    time_created = Column(DateTime(timezone=True), default=functions.now()) #todo: search on this.
-    time_updated = Column(DateTime(timezone=True), default=functions.now(), onupdate=functions.now())
+    time_created = Column(
+        DateTime(timezone=True), default=functions.now()
+    )  # todo: search on this.
+    time_updated = Column(
+        DateTime(timezone=True), default=functions.now(), onupdate=functions.now()
+    )
 
     @classmethod
     def getall(cls):
@@ -29,6 +33,6 @@ class BaseModel(db.Model):
         db.session.delete(self)
         db.session.commit()
 
-    def update(self):
-        # Update method will have multiple implementation
-        pass
+    def update(self, update_dict):
+        self.query.filter_by(id=self.id).update(update_dict)
+        db.session.commit()
